@@ -8,39 +8,73 @@
 </head>
 <body>
   <main class="page-shell">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="ProdFlow home">
+        <span class="brand-mark">P</span>
+        ProdFlow
+      </a>
+      <div class="nav-links">
+        <a href="#">Roadmaps</a>
+        <a href="#">Teams</a>
+        <a href="#">Reports</a>
+      </div>
+    </nav>
+
     <section class="hero" aria-labelledby="product-title">
       <div class="hero-content">
         <p class="eyebrow">Product Management System</p>
-        <h1 id="product-title">ProdFlow</h1>
+        <h1 id="product-title">Bring product work into one clear view.</h1>
         <p class="description">
-          Plan roadmaps, organize product tasks, track launches, and keep every team aligned from idea to release.
+          ProdFlow helps teams plan roadmaps, prioritize backlog items, track launches, and understand product progress without scattered spreadsheets.
         </p>
         <button id="demoButton" class="primary-button" type="button">
-          View Product Snapshot
+          Switch Snapshot
         </button>
-        <p id="statusMessage" class="status-message" aria-live="polite"></p>
+        <p id="statusMessage" class="status-message" aria-live="polite">
+          Current view: roadmap health and launch readiness.
+        </p>
       </div>
 
       <div class="product-panel" aria-label="Product dashboard preview">
         <div class="panel-header">
-          <span>Q3 Roadmap</span>
-          <strong>72%</strong>
+          <div>
+            <span id="snapshotTitle">Q3 Roadmap</span>
+            <small id="snapshotSubtitle">Release confidence</small>
+          </div>
+          <strong id="snapshotScore">72%</strong>
         </div>
         <div class="progress-track">
-          <div class="progress-fill"></div>
+          <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div class="metric-grid">
+          <div>
+            <span>12</span>
+            Features
+          </div>
+          <div>
+            <span>4</span>
+            Teams
+          </div>
+          <div>
+            <span>9</span>
+            Risks Closed
+          </div>
         </div>
         <div class="task-list">
           <div class="task done">
             <span></span>
-            Customer feedback review
+            <p>Customer feedback review</p>
+            <strong>Done</strong>
           </div>
           <div class="task active">
             <span></span>
-            Launch checklist
+            <p>Launch checklist</p>
+            <strong>Active</strong>
           </div>
           <div class="task">
             <span></span>
-            Pricing experiment
+            <p>Pricing experiment</p>
+            <strong>Next</strong>
           </div>
         </div>
       </div>
