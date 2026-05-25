@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProdFlow | Product Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="product-title">
+      <div class="hero-content">
+        <p class="eyebrow">Product Management System</p>
+        <h1 id="product-title">ProdFlow</h1>
+        <p class="description">
+          Plan roadmaps, organize product tasks, track launches, and keep every team aligned from idea to release.
+        </p>
+        <button id="demoButton" class="primary-button" type="button">
+          View Product Snapshot
+        </button>
+        <p id="statusMessage" class="status-message" aria-live="polite"></p>
+      </div>
+
+      <div class="product-panel" aria-label="Product dashboard preview">
+        <div class="panel-header">
+          <span>Q3 Roadmap</span>
+          <strong>72%</strong>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="task-list">
+          <div class="task done">
+            <span></span>
+            Customer feedback review
+          </div>
+          <div class="task active">
+            <span></span>
+            Launch checklist
+          </div>
+          <div class="task">
+            <span></span>
+            Pricing experiment
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
